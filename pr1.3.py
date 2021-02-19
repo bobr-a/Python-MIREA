@@ -6,7 +6,7 @@ def f13(n, m):
             s1 += j ** 8 - 84 * j ** 2 - 40
     for i in range(1, n + 1):
         s2 += 69 * i + i ** 5
-    s2 = 66 * s2
+    s2 = 66* s2
     return s1 - s2
 
 
