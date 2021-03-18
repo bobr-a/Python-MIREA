@@ -13,5 +13,5 @@ def f12(x):
     elif x >= 207:
         return (math.sin(x) - x ** 8 - 7) ** 7 - 17 * x ** 3
 
-
+#Makeev
 print('%.2e' % f12(-24))
