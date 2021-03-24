@@ -7,5 +7,5 @@ def f14(n):
     else:
         return math.cos(f14(n - 1)) + math.tan(f14(n - 1)) + 51
 
-
+#Makeev
 #print(f14(9))
