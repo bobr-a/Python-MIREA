@@ -1,50 +1,49 @@
 class C32:
-    state = "A"
-
+    start= "A"
     def cull(self):
-        if self.state == "A":
-            self.state = "B"
+        if self.start == "A":
+            self.start = "B"
             return 0
-        elif self.state == "B":
-            self.state = "C"
+        elif self.start == "B":
+            self.start = "C"
             return 1
-        elif self.state == "E":
-            self.state = "F"
+        elif self.start == "E":
+            self.start = "F"
             return 5
-        elif self.state == "G":
-            self.state = "H"
+        elif self.start == "G":
+            self.start = "H"
             return 10
         else:
             raise RuntimeError
 
     def print(self):
-        if self.state == "C":
-            self.state = "D"
+        if self.start == "C":
+            self.start = "D"
             return 2
-        elif self.state == "D":
-            self.state = "E"
+        elif self.start == "D":
+            self.start = "E"
             return 4
-        elif self.state == "F":
-            self.state = "G"
+        elif self.start == "F":
+            self.start = "G"
             return 8
-        elif self.state == "H":
-            self.state = "B"
+        elif self.start == "H":
+            self.start = "B"
             return 11
-        elif self.state == "E":
-            self.state = "A"
+        elif self.start == "E":
+            self.start = "A"
             return 7
         else:
             raise RuntimeError
 
     def bend(self):
-        if self.state == "C":
-            self.state = "A"
+        if self.start == "C":
+            self.start = "A"
             return 3
-        elif self.state == "F":
-            self.state = "C"
+        elif self.start == "F":
+            self.start = "C"
             return 9
-        elif self.state == "E":
-            self.state = "G"
+        elif self.start == "E":
+            self.start = "G"
             return 6
         else:
             raise RuntimeError
